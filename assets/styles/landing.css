@@ -107,6 +107,9 @@ ul {
   .landing .header__sm {
     display: none;
   }
+  .landing .header__wrap {
+    width: 100vw;
+  }
 }
 .landing .socials {
   position: absolute;
