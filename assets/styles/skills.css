@@ -74,20 +74,23 @@ ul {
 }
 .skills__header {
   font-weight: 600;
+  
 }
 .skills .skills__text {
   position: absolute;
   white-space: nowrap;
   font-weight: 400;
   font-size: 22px;
+  
 }
 .skills .skills__text--left {
   position: absolute;
   white-space: nowrap;
   left: 0;
-  top: 50px;
+  top: 60px;
   animation: moveleft 300s linear infinite;
   color: rgba(108, 255, 140, 0.4784313725);
+  
 }
 @keyframes moveleft {
   0% {
@@ -99,7 +102,7 @@ ul {
 }
 .skills .skills__text--rigth {
   right: 0;
-  top: 95px;
+  top: 120px;
   position: absolute;
   white-space: nowrap;
   color: rgba(108, 255, 140, 0.4784313725);

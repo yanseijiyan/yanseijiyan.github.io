@@ -357,5 +357,20 @@ ul {
     transform: translate(-14rem, -3rem);
   }
 }
+@media only screen and (max-width: 600px) {
+  .projects__header,
+  .project__infos--name {
+    font-size: 18px; /* ou o tamanho desejado para smartphones */
+  }
+  .coollink {
+    margin-left: 100px; /* Adiciona margem à esquerda para mover para a direita */
+  }
+  .project__img {
+    max-width: 80%; /* Ajuste o valor conforme necessário para ocupar mais espaço */
+    margin-left: auto; /* Mova a imagem para a direita */
+    margin-right: -60px; /* Adicione margem à direita para separar d Evita que a imagem quebre a linha */
+     /* ou o tamanho desejado para smartphones */
+  }
+}
 
 /*# sourceMappingURL=projects.css.map */

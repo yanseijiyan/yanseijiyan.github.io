@@ -103,6 +103,7 @@ ul {
   }
 }
 @media (max-width: 650px) {
+
   .landing .header__sm {
     display: none;
   }
@@ -210,9 +211,11 @@ ul {
   width: 93%;
   padding: 1rem;
 }
-@media only screen and (max-width: 650px) {
+
+
+@media only screen and (max-width: 375px) and (max-height: 620px) {
   .landing .intro h1 {
-    font-size: 8px; /* ou o tamanho desejado para smartphones */
+    font-size: 12px; /* ou o tamanho desejado para smartphones */
   }
 }
 /*# sourceMappingURL=landing.css.map */
