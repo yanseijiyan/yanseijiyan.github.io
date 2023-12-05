@@ -308,9 +308,13 @@ ul {
 .certificate__link:hover {
   animation: coloredAnimation 0.005s infinite;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
+  .certificates__header{
+    font-size: 25px;
+  }
   .certificate__link {
-    font-size: 15px;
+    font-size: 10px;
+    font-weight: 100;
   }
 }
 
