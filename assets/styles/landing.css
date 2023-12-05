@@ -212,7 +212,7 @@ ul {
 }
 @media only screen and (max-width: 650px) {
   .landing .intro h1 {
-    font-size: 11px; /* ou o tamanho desejado para smartphones */
+    font-size: 8px; /* ou o tamanho desejado para smartphones */
   }
 }
 /*# sourceMappingURL=landing.css.map */
