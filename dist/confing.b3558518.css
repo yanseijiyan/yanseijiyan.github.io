@@ -1,0 +1,1850 @@
+@import url("https://fonts.cdnfonts.com/css/file-deletion");
+@font-face {
+  font-family: "yanseiji";
+  src: url("https://fonts.yanseiji.woff/css/file-deletion") format("woff");
+  font-style: normal;
+  font-weight: 400;
+  color: rgb(10, 255, 84);
+}
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+*:after *:before {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  background: #0f1632;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+img,
+video,
+canvas,
+svg {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+/*--------Varibles-------*/
+@import url("https://fonts.cdnfonts.com/css/file-deletion");
+@font-face {
+  font-family: "yanseiji";
+  src: url("https://fonts.yanseiji.woff/css/file-deletion") format("woff");
+  font-style: normal;
+  font-weight: 400;
+  color: rgb(10, 255, 84);
+}
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+*:after *:before {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  background: #0f1632;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+img,
+video,
+canvas,
+svg {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+/*--------Varibles-------*/
+.loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: 99;
+  background: #0f1632;
+  display: grid;
+  place-items: center;
+  font-family: "Orbitron", sans-serif;
+  display: none;
+  /*&__svg{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 95%;
+      opacity: 0;
+  }*/
+}
+.loading__box {
+  position: relative;
+  width: 500px;
+  height: 200px;
+  border: 3px solid rgb(10, 255, 84);
+  border-top: 3px solid rgba(108, 255, 140, 0.4784313725);
+  border-bottom: 3px solid rgba(108, 255, 140, 0.4784313725);
+}
+@media (max-width: 355px) {
+  .loading__box {
+    font-size: 17px;
+  }
+}
+.loading__bar {
+  width: 90%;
+  height: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #ffffff;
+  border-radius: 2px;
+}
+.loading__bar--inner {
+  height: 100%;
+  width: 0%;
+  border-radius: 2px;
+  background: rgb(10, 255, 84);
+}
+.loading__text {
+  position: relative;
+  color: #ffffff;
+  padding: 1rem;
+  font-size: 20px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.loading__text--dot {
+  width: 15px;
+  height: 15px;
+  margin: 0 3px;
+  border-radius: 50%;
+  background: rgb(10, 255, 84);
+  animation: pulse 1s infinite;
+}
+@keyframes pulse {
+  from {
+    opacity: 0;
+    background: #ffffff;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.loading__text--border {
+  width: 85%;
+  height: 1px;
+  background: rgb(10, 255, 84);
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.loading__counter {
+  position: absolute;
+  top: 70%;
+  left: 0;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 700;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+.loading__counter--number {
+  color: rgb(10, 255, 84);
+}
+.loading__width_animation {
+  animation: width_animation 1s forwards;
+}
+@keyframes __width_animation {
+  0% {
+    width: 85%;
+  }
+  100% {
+    width: 280px;
+  }
+}
+@import url("https://fonts.cdnfonts.com/css/file-deletion");
+@import url("https://fonts.cdnfonts.com/css/bartkey");
+@font-face {
+  font-family: "yanseiji";
+  src: url("https://fonts.yanseiji.woff/css/file-deletion") format("woff");
+  font-style: normal;
+  font-weight: 400;
+  color: rgb(10, 255, 84);
+}
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+*:after *:before {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  background: #0f1632;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+img,
+video,
+canvas,
+svg {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+/*--------Varibles-------*/
+.landing {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: #0f1632;
+  color: rgb(10, 255, 84);
+  overflow: hidden;
+  background-image: url("/54.594ffb1b.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.landing .header {
+  position: absolute;
+  top: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+.landing .header__wrap {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 60vw;
+}
+.landing .header__left {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.landing .header__left li {
+  font-size: 18px;
+  font-weight: 700;
+}
+@media (max-width: 1200px) {
+  .landing .header__wrap {
+    width: 100vw;
+  }
+}
+@media (max-width: 650px) {
+  .landing .header__sm {
+    display: none;
+  }
+}
+.landing .socials {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 10rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  z-index: 2;
+}
+.landing .scrolldown {
+  position: absolute;
+  bottom: 3rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 23px;
+  height: 70px;
+}
+.landing .scrolldown__wheel {
+  height: 42px;
+  width: 24px;
+  border-radius: 10px;
+  border: 2px solid rgb(10, 255, 84);
+}
+.landing .scrolldown__wheel--inner {
+  position: absolute;
+  left: 10px;
+  margin-top: 5px;
+  width: 4px;
+  height: 4px;
+  background: rgb(10, 255, 84);
+  border-radius: 50%;
+  animation: movingmouse 0.5s linear infinite;
+}
+@keyframes movingmouse {
+  0% {
+    top: 1px;
+  }
+  25% {
+    top: 2px;
+  }
+  50% {
+    top: 3px;
+  }
+  75% {
+    top: 2px;
+  }
+  100% {
+    top: 1px;
+  }
+}
+.landing .scrolldown .scrolldown__arrows {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.landing .scrolldown .scrolldown__arrows .scrolldown__arrow {
+  width: 15px;
+  height: 15px;
+  border-right: 2px solid rgb(10, 255, 84);
+  border-bottom: 2px solid rgb(10, 255, 84);
+  transform: rotate(45deg);
+  animation: movingarrow 0.8s infinite;
+  animation-direction: alternate;
+}
+.landing .scrolldown .scrolldown__arrows .scrolldown__arrow:nth-child(2) {
+  animation-delay: 0.1s;
+}
+.landing .scrolldown .scrolldown__arrows .scrolldown__arrow:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.landing .scrolldown .scrolldown__arrows .scrolldown__arrow:nth-child(3) {
+  animation-delay: 0.3s;
+}
+@keyframes movingarrow {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.landing .intro {
+  position: absolute;
+  top: 35%;
+  left: 1rem;
+  width: 100%;
+  height: 60%;
+  z-index: 2;
+  color: rgb(10, 255, 84);
+  font-family: "File Deletion", sans-serif;
+}
+.landing .intro h4 {
+  font-size: 15px;
+}
+.landing .intro h1 {
+  font-size: 18px;
+  width: 93%;
+  padding: 1rem;
+}
+@import url("https://fonts.cdnfonts.com/css/file-deletion");
+@font-face {
+  font-family: "yanseiji";
+  src: url("https://fonts.yanseiji.woff/css/file-deletion") format("woff");
+  font-style: normal;
+  font-weight: 400;
+  color: rgb(10, 255, 84);
+}
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+*:after *:before {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  background: #0f1632;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+img,
+video,
+canvas,
+svg {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+/*--------Varibles-------*/
+.coollink {
+  position: relative;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+.coollink:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: currentColor;
+  transform: scale3d(0, 1, 1);
+  transform-origin: right;
+  transition: transform 0.4s cubic-bezier(0.5, 0.5, 0.3, 0.1);
+}
+.coollink:after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  height: 100%;
+  transform: translate3d(150%, 0, 0); /* Corrigido aqui */
+  transition: transform 0.4s cubic-bezier(0.5, 0.5, 0.3, 0.1);
+}
+.coollink span {
+  transition: transform 0.4s cubic-bezier(0.5, 0.5, 0.3, 0.1);
+}
+.coollink:hover:before {
+  transform: scale3d(1, 1, 1);
+  transform-origin: left;
+}
+.coollink:hover:after {
+  transform: translate3d(0, 0, 0);
+}
+.coollink:hover span {
+  transform: translate3d(-150%, 0, 0);
+}
+
+.coolbutton {
+  position: relative;
+  border: none;
+  cursor: pointer;
+  width: 175px;
+  height: 120px;
+  background: none;
+  font-size: 18px;
+  font-weight: 700;
+}
+.coolbutton:before, .coolbutton:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.coolbutton:before {
+  content: "";
+  background: #24438f;
+  clip-path: path("M154.5,88.5 C131,113.5 62.5,110 30,89.5 C-2.5,69 -3.5,42 4.5,25.5 C12.5,9 33.5,-6 85,3.5 C136.5,13 178,63.5 154.5,88.5 Z");
+  transition: clip-path 0.5s cubic-bezier(0.455, 2.5, 0.645, 0.55);
+}
+.coolbutton:hover:before {
+  clip-path: path("M143,77 C117,96 74,100.5 45.5,91.5 C17,82.5 -10.5,57 5.5,31.5 C21.5,6 79,-5.5 130.5,4 C182,13.5 169,58 143,77 Z");
+}
+.coolbutton span {
+  mix-blend-mode: difference;
+  color: rgb(10, 255, 84);
+}
+.coolbutton:after {
+  content: "";
+  height: 85%;
+  width: 95%;
+  top: 6px;
+  border: 1px solid rgb(10, 255, 84);
+  border-radius: 58% 42% 55% 45%/56% 45% 55% 44%;
+  transform: rotate(-20deg);
+  transition: transform 0.5s cubic-bezier(0.455, 2.5, 0.645, 0.55);
+}
+.coolbutton:hover:after {
+  transform: translate3d(0, -5px, 0);
+}
+@media (max-width: 800px) {
+  .coolbutton {
+    transform: scale3d(0.7, 0.7, 0.7);
+    font-size: 23px;
+  }
+}
+
+.uil {
+  font-size: 35px;
+  text-shadow: -10px -20px #000000;
+}
+.uil:hover {
+  animation: coloredAnimation 0.005s infinite;
+}
+@keyframes coloredAnimation {
+  0% {
+    text-shadow: 5px 4px rgb(10, 255, 84), 5px 4px #000000;
+  }
+  25% {
+    text-shadow: -5px -6px rgb(10, 255, 84), -5px -6px #000000;
+  }
+  50% {
+    text-shadow: 5px -4px rgb(10, 255, 84), 5px -4px #000000;
+  }
+  75% {
+    text-shadow: -8px -4px rgb(10, 255, 84), -5px -4px #000000;
+  }
+  100% {
+    text-shadow: -5px 0px rgb(10, 255, 84), 5px -6px #000000;
+  }
+}
+
+.coolEye {
+  position: relative;
+  display: inline-block;
+  top: 100px;
+}
+.coolEye .textcircle {
+  display: block;
+  width: 250px;
+  animation: roatte 10s linear infinite;
+}
+.coolEye .textcircle text {
+  font-size: 32px;
+  text-transform: uppercase;
+  fill: rgb(10, 255, 84);
+}
+@keyframes roatte {
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+.eye {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.eye__outer, .eye__inner, .eye__lashes-up, .eye__lashes-down {
+  stroke: rgb(10, 255, 84);
+  fill: none;
+  stroke-width: 1.5px;
+}
+.eye__lashes-down {
+  opacity: 0;
+}
+@import url("https://fonts.cdnfonts.com/css/file-deletion");
+@font-face {
+  font-family: "yanseiji";
+  src: url("https://fonts.yanseiji.woff/css/file-deletion") format("woff");
+  font-style: normal;
+  font-weight: 400;
+  color: rgb(10, 255, 84);
+}
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+*:after *:before {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  background: #0f1632;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+img,
+video,
+canvas,
+svg {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+/*--------Varibles-------*/
+.skills {
+  position: relative;
+  font-size: 25px;
+  height: 150px;
+  background: #24438f;
+  overflow: hidden;
+  text-align: center;
+  padding-top: 1rem;
+  color: rgba(108, 255, 140, 0.4784313725);
+}
+.skills__header {
+  font-weight: 600;
+}
+.skills .skills__text {
+  position: absolute;
+  white-space: nowrap;
+  font-weight: 400;
+  font-size: 22px;
+}
+.skills .skills__text--left {
+  position: absolute;
+  white-space: nowrap;
+  left: 0;
+  top: 50px;
+  animation: moveleft 300s linear infinite;
+  color: rgba(108, 255, 140, 0.4784313725);
+}
+@keyframes moveleft {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+.skills .skills__text--rigth {
+  right: 0;
+  top: 95px;
+  position: absolute;
+  white-space: nowrap;
+  color: rgba(108, 255, 140, 0.4784313725);
+  animation: moverigth 300s linear infinite;
+}
+@keyframes moverigth {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(50%, 0, 0);
+  }
+}
+@media (max-width: 700px) {
+  .skills {
+    height: 200px;
+  }
+  .skills__text {
+    font-size: 20px;
+  }
+}
+@import url("https://fonts.cdnfonts.com/css/file-deletion");
+@import url("https://fonts.cdnfonts.com/css/file-deletion");
+@font-face {
+  font-family: "yanseiji";
+  src: url("https://fonts.yanseiji.woff/css/file-deletion") format("woff");
+  font-style: normal;
+  font-weight: 400;
+  color: rgb(10, 255, 84);
+}
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+*:after *:before {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  background: #0f1632;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+img,
+video,
+canvas,
+svg {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+/*--------Varibles-------*/
+@font-face {
+  font-family: "yanseiji";
+  src: url("https://fonts.yanseiji.woff/css/file-deletion") format("woff");
+  font-style: normal;
+  font-weight: 400;
+  color: rgb(10, 255, 84);
+}
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+*:after *:before {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  background: #0f1632;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+img,
+video,
+canvas,
+svg {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+/*--------Varibles-------*/
+.coollink {
+  position: relative;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+.coollink:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: currentColor;
+  transform: scale3d(0, 1, 1);
+  transform-origin: right;
+  transition: transform 0.4s cubic-bezier(0.5, 0.5, 0.3, 0.1);
+}
+.coollink:after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  height: 100%;
+  transform: translate3d(150%, 0, 0); /* Corrigido aqui */
+  transition: transform 0.4s cubic-bezier(0.5, 0.5, 0.3, 0.1);
+}
+.coollink span {
+  transition: transform 0.4s cubic-bezier(0.5, 0.5, 0.3, 0.1);
+}
+.coollink:hover:before {
+  transform: scale3d(1, 1, 1);
+  transform-origin: left;
+}
+.coollink:hover:after {
+  transform: translate3d(0, 0, 0);
+}
+.coollink:hover span {
+  transform: translate3d(-150%, 0, 0);
+}
+
+.coolbutton {
+  position: relative;
+  border: none;
+  cursor: pointer;
+  width: 175px;
+  height: 120px;
+  background: none;
+  font-size: 18px;
+  font-weight: 700;
+}
+.coolbutton:before, .coolbutton:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.coolbutton:before {
+  content: "";
+  background: #24438f;
+  clip-path: path("M154.5,88.5 C131,113.5 62.5,110 30,89.5 C-2.5,69 -3.5,42 4.5,25.5 C12.5,9 33.5,-6 85,3.5 C136.5,13 178,63.5 154.5,88.5 Z");
+  transition: clip-path 0.5s cubic-bezier(0.455, 2.5, 0.645, 0.55);
+}
+.coolbutton:hover:before {
+  clip-path: path("M143,77 C117,96 74,100.5 45.5,91.5 C17,82.5 -10.5,57 5.5,31.5 C21.5,6 79,-5.5 130.5,4 C182,13.5 169,58 143,77 Z");
+}
+.coolbutton span {
+  mix-blend-mode: difference;
+  color: rgb(10, 255, 84);
+}
+.coolbutton:after {
+  content: "";
+  height: 85%;
+  width: 95%;
+  top: 6px;
+  border: 1px solid rgb(10, 255, 84);
+  border-radius: 58% 42% 55% 45%/56% 45% 55% 44%;
+  transform: rotate(-20deg);
+  transition: transform 0.5s cubic-bezier(0.455, 2.5, 0.645, 0.55);
+}
+.coolbutton:hover:after {
+  transform: translate3d(0, -5px, 0);
+}
+@media (max-width: 800px) {
+  .coolbutton {
+    transform: scale3d(0.7, 0.7, 0.7);
+    font-size: 23px;
+  }
+}
+
+.uil {
+  font-size: 35px;
+  text-shadow: -10px -20px #000000;
+}
+.uil:hover {
+  animation: coloredAnimation 0.005s infinite;
+}
+@keyframes coloredAnimation {
+  0% {
+    text-shadow: 5px 4px rgb(10, 255, 84), 5px 4px #000000;
+  }
+  25% {
+    text-shadow: -5px -6px rgb(10, 255, 84), -5px -6px #000000;
+  }
+  50% {
+    text-shadow: 5px -4px rgb(10, 255, 84), 5px -4px #000000;
+  }
+  75% {
+    text-shadow: -8px -4px rgb(10, 255, 84), -5px -4px #000000;
+  }
+  100% {
+    text-shadow: -5px 0px rgb(10, 255, 84), 5px -6px #000000;
+  }
+}
+
+.coolEye {
+  position: relative;
+  display: inline-block;
+  top: 100px;
+}
+.coolEye .textcircle {
+  display: block;
+  width: 250px;
+  animation: roatte 10s linear infinite;
+}
+.coolEye .textcircle text {
+  font-size: 32px;
+  text-transform: uppercase;
+  fill: rgb(10, 255, 84);
+}
+@keyframes roatte {
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+.eye {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.eye__outer, .eye__inner, .eye__lashes-up, .eye__lashes-down {
+  stroke: rgb(10, 255, 84);
+  fill: none;
+  stroke-width: 1.5px;
+}
+.eye__lashes-down {
+  opacity: 0;
+}
+
+.projects {
+  font-family: "File Deletion", sans-serif;
+  color: rgb(10, 255, 84);
+}
+.projects__header {
+  font-size: 40px;
+  font-style: italic;
+  padding-bottom: 10px;
+}
+
+.project {
+  font-family: "File Deletion", sans-serif;
+  color: rgb(10, 255, 84);
+}
+.project__header {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 1rem;
+}
+.project__header span {
+  border-top: 1px solid rgb(10, 255, 84);
+  padding: 1rem;
+  font-size: 25px;
+  text-align: center;
+}
+.project__infos {
+  margin-top: 1rem;
+}
+.project__infos--name {
+  position: relative;
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+}
+.project__img {
+  position: relative;
+  width: 100%;
+  height: 700px;
+}
+.project__img img {
+  width: 60vw;
+  height: 600px;
+  object-fit: cover;
+  position: absolute;
+  right: 15vw;
+  top: 3rem;
+}
+.project__links {
+  padding-top: 3rem;
+}
+.project__links button {
+  bottom: 170px;
+  left: 20px;
+}
+.project__tags {
+  position: absolute;
+  bottom: 1rem;
+  left: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+@media (max-width: 1350px) {
+  .project .projects {
+    padding: 3rem;
+  }
+  .project .project__img {
+    width: 74vw;
+    right: 5rem;
+  }
+  .project .project__info--name {
+    font-size: 25px;
+  }
+  .project .project .coolEyebutton {
+    transform: translate(-14rem, -3rem);
+  }
+}
+@import url("https://fonts.cdnfonts.com/css/file-deletion");
+@import url("https://fonts.cdnfonts.com/css/file-deletion");
+@font-face {
+  font-family: "yanseiji";
+  src: url("https://fonts.yanseiji.woff/css/file-deletion") format("woff");
+  font-style: normal;
+  font-weight: 400;
+  color: rgb(10, 255, 84);
+}
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+*:after *:before {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  background: #0f1632;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+img,
+video,
+canvas,
+svg {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+/*--------Varibles-------*/
+@font-face {
+  font-family: "yanseiji";
+  src: url("https://fonts.yanseiji.woff/css/file-deletion") format("woff");
+  font-style: normal;
+  font-weight: 400;
+  color: rgb(10, 255, 84);
+}
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+*:after *:before {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  background: #0f1632;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+img,
+video,
+canvas,
+svg {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+/*--------Varibles-------*/
+.coollink {
+  position: relative;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+.coollink:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: currentColor;
+  transform: scale3d(0, 1, 1);
+  transform-origin: right;
+  transition: transform 0.4s cubic-bezier(0.5, 0.5, 0.3, 0.1);
+}
+.coollink:after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  height: 100%;
+  transform: translate3d(150%, 0, 0); /* Corrigido aqui */
+  transition: transform 0.4s cubic-bezier(0.5, 0.5, 0.3, 0.1);
+}
+.coollink span {
+  transition: transform 0.4s cubic-bezier(0.5, 0.5, 0.3, 0.1);
+}
+.coollink:hover:before {
+  transform: scale3d(1, 1, 1);
+  transform-origin: left;
+}
+.coollink:hover:after {
+  transform: translate3d(0, 0, 0);
+}
+.coollink:hover span {
+  transform: translate3d(-150%, 0, 0);
+}
+
+.coolbutton {
+  position: relative;
+  border: none;
+  cursor: pointer;
+  width: 175px;
+  height: 120px;
+  background: none;
+  font-size: 18px;
+  font-weight: 700;
+}
+.coolbutton:before, .coolbutton:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.coolbutton:before {
+  content: "";
+  background: #24438f;
+  clip-path: path("M154.5,88.5 C131,113.5 62.5,110 30,89.5 C-2.5,69 -3.5,42 4.5,25.5 C12.5,9 33.5,-6 85,3.5 C136.5,13 178,63.5 154.5,88.5 Z");
+  transition: clip-path 0.5s cubic-bezier(0.455, 2.5, 0.645, 0.55);
+}
+.coolbutton:hover:before {
+  clip-path: path("M143,77 C117,96 74,100.5 45.5,91.5 C17,82.5 -10.5,57 5.5,31.5 C21.5,6 79,-5.5 130.5,4 C182,13.5 169,58 143,77 Z");
+}
+.coolbutton span {
+  mix-blend-mode: difference;
+  color: rgb(10, 255, 84);
+}
+.coolbutton:after {
+  content: "";
+  height: 85%;
+  width: 95%;
+  top: 6px;
+  border: 1px solid rgb(10, 255, 84);
+  border-radius: 58% 42% 55% 45%/56% 45% 55% 44%;
+  transform: rotate(-20deg);
+  transition: transform 0.5s cubic-bezier(0.455, 2.5, 0.645, 0.55);
+}
+.coolbutton:hover:after {
+  transform: translate3d(0, -5px, 0);
+}
+@media (max-width: 800px) {
+  .coolbutton {
+    transform: scale3d(0.7, 0.7, 0.7);
+    font-size: 23px;
+  }
+}
+
+.uil {
+  font-size: 35px;
+  text-shadow: -10px -20px #000000;
+}
+.uil:hover {
+  animation: coloredAnimation 0.005s infinite;
+}
+@keyframes coloredAnimation {
+  0% {
+    text-shadow: 5px 4px rgb(10, 255, 84), 5px 4px #000000;
+  }
+  25% {
+    text-shadow: -5px -6px rgb(10, 255, 84), -5px -6px #000000;
+  }
+  50% {
+    text-shadow: 5px -4px rgb(10, 255, 84), 5px -4px #000000;
+  }
+  75% {
+    text-shadow: -8px -4px rgb(10, 255, 84), -5px -4px #000000;
+  }
+  100% {
+    text-shadow: -5px 0px rgb(10, 255, 84), 5px -6px #000000;
+  }
+}
+
+.coolEye {
+  position: relative;
+  display: inline-block;
+  top: 100px;
+}
+.coolEye .textcircle {
+  display: block;
+  width: 250px;
+  animation: roatte 10s linear infinite;
+}
+.coolEye .textcircle text {
+  font-size: 32px;
+  text-transform: uppercase;
+  fill: rgb(10, 255, 84);
+}
+@keyframes roatte {
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+.eye {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.eye__outer, .eye__inner, .eye__lashes-up, .eye__lashes-down {
+  stroke: rgb(10, 255, 84);
+  fill: none;
+  stroke-width: 1.5px;
+}
+.eye__lashes-down {
+  opacity: 0;
+}
+
+.certificates {
+  font-family: "File Deletion", sans-serif;
+  color: rgb(10, 255, 84);
+}
+.certificates__header {
+  font-family: "File Deletion", sans-serif;
+  font-size: 60px;
+  font-style: italic;
+  padding-bottom: 100px;
+  border-top: 1px solid rgb(10, 255, 84);
+}
+
+.certificate {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  font-weight: 800;
+}
+
+.certificate__link {
+  font-size: 20px;
+  width: calc(20% - 10px);
+  margin: 10px;
+  margin-bottom: 50px;
+  box-sizing: border-box;
+}
+.certificate__link:hover {
+  animation: coloredAnimation 0.005s infinite;
+}
+@media screen and (max-width: 768px) {
+  .certificate__link {
+    font-size: 15px;
+  }
+}
+@import url("https://fonts.cdnfonts.com/css/file-deletion");
+@import url("https://fonts.cdnfonts.com/css/file-deletion");
+@font-face {
+  font-family: "yanseiji";
+  src: url("https://fonts.yanseiji.woff/css/file-deletion") format("woff");
+  font-style: normal;
+  font-weight: 400;
+  color: rgb(10, 255, 84);
+}
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+*:after *:before {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  background: #0f1632;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+img,
+video,
+canvas,
+svg {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+/*--------Varibles-------*/
+@font-face {
+  font-family: "yanseiji";
+  src: url("https://fonts.yanseiji.woff/css/file-deletion") format("woff");
+  font-style: normal;
+  font-weight: 400;
+  color: rgb(10, 255, 84);
+}
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+*:after *:before {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  background: #0f1632;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+img,
+video,
+canvas,
+svg {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+/*--------Varibles-------*/
+.coollink {
+  position: relative;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+.coollink:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: currentColor;
+  transform: scale3d(0, 1, 1);
+  transform-origin: right;
+  transition: transform 0.4s cubic-bezier(0.5, 0.5, 0.3, 0.1);
+}
+.coollink:after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  height: 100%;
+  transform: translate3d(150%, 0, 0); /* Corrigido aqui */
+  transition: transform 0.4s cubic-bezier(0.5, 0.5, 0.3, 0.1);
+}
+.coollink span {
+  transition: transform 0.4s cubic-bezier(0.5, 0.5, 0.3, 0.1);
+}
+.coollink:hover:before {
+  transform: scale3d(1, 1, 1);
+  transform-origin: left;
+}
+.coollink:hover:after {
+  transform: translate3d(0, 0, 0);
+}
+.coollink:hover span {
+  transform: translate3d(-150%, 0, 0);
+}
+
+.coolbutton {
+  position: relative;
+  border: none;
+  cursor: pointer;
+  width: 175px;
+  height: 120px;
+  background: none;
+  font-size: 18px;
+  font-weight: 700;
+}
+.coolbutton:before, .coolbutton:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.coolbutton:before {
+  content: "";
+  background: #24438f;
+  clip-path: path("M154.5,88.5 C131,113.5 62.5,110 30,89.5 C-2.5,69 -3.5,42 4.5,25.5 C12.5,9 33.5,-6 85,3.5 C136.5,13 178,63.5 154.5,88.5 Z");
+  transition: clip-path 0.5s cubic-bezier(0.455, 2.5, 0.645, 0.55);
+}
+.coolbutton:hover:before {
+  clip-path: path("M143,77 C117,96 74,100.5 45.5,91.5 C17,82.5 -10.5,57 5.5,31.5 C21.5,6 79,-5.5 130.5,4 C182,13.5 169,58 143,77 Z");
+}
+.coolbutton span {
+  mix-blend-mode: difference;
+  color: rgb(10, 255, 84);
+}
+.coolbutton:after {
+  content: "";
+  height: 85%;
+  width: 95%;
+  top: 6px;
+  border: 1px solid rgb(10, 255, 84);
+  border-radius: 58% 42% 55% 45%/56% 45% 55% 44%;
+  transform: rotate(-20deg);
+  transition: transform 0.5s cubic-bezier(0.455, 2.5, 0.645, 0.55);
+}
+.coolbutton:hover:after {
+  transform: translate3d(0, -5px, 0);
+}
+@media (max-width: 800px) {
+  .coolbutton {
+    transform: scale3d(0.7, 0.7, 0.7);
+    font-size: 23px;
+  }
+}
+
+.uil {
+  font-size: 35px;
+  text-shadow: -10px -20px #000000;
+}
+.uil:hover {
+  animation: coloredAnimation 0.005s infinite;
+}
+@keyframes coloredAnimation {
+  0% {
+    text-shadow: 5px 4px rgb(10, 255, 84), 5px 4px #000000;
+  }
+  25% {
+    text-shadow: -5px -6px rgb(10, 255, 84), -5px -6px #000000;
+  }
+  50% {
+    text-shadow: 5px -4px rgb(10, 255, 84), 5px -4px #000000;
+  }
+  75% {
+    text-shadow: -8px -4px rgb(10, 255, 84), -5px -4px #000000;
+  }
+  100% {
+    text-shadow: -5px 0px rgb(10, 255, 84), 5px -6px #000000;
+  }
+}
+
+.coolEye {
+  position: relative;
+  display: inline-block;
+  top: 100px;
+}
+.coolEye .textcircle {
+  display: block;
+  width: 250px;
+  animation: roatte 10s linear infinite;
+}
+.coolEye .textcircle text {
+  font-size: 32px;
+  text-transform: uppercase;
+  fill: rgb(10, 255, 84);
+}
+@keyframes roatte {
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+.eye {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.eye__outer, .eye__inner, .eye__lashes-up, .eye__lashes-down {
+  stroke: rgb(10, 255, 84);
+  fill: none;
+  stroke-width: 1.5px;
+}
+.eye__lashes-down {
+  opacity: 0;
+}
+
+.CV {
+  font-family: "File Deletion", sans-serif;
+  color: rgb(10, 255, 84);
+}
+.CV .CVh1 {
+  font-size: 60px;
+  font-style: italic;
+  padding-bottom: 30px;
+  border-top: 1px solid rgb(10, 255, 84);
+}
+
+.resume {
+  text-align: center;
+  font-weight: 800;
+}
+.resume__header h1 {
+  font-size: 40px;
+}
+.resume__header p {
+  font-size: 20px;
+  font-weight: 700;
+}
+.resume div {
+  padding-top: 50px;
+}
+.resume li {
+  padding-top: 20px;
+  letter-spacing: 1.5px;
+}
+.resume p {
+  padding-top: 50px;
+}
+@import url("https://fonts.cdnfonts.com/css/file-deletion");
+@font-face {
+  font-family: "yanseiji";
+  src: url("https://fonts.yanseiji.woff/css/file-deletion") format("woff");
+  font-style: normal;
+  font-weight: 400;
+  color: rgb(10, 255, 84);
+}
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+*:after *:before {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  background: #0f1632;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+img,
+video,
+canvas,
+svg {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+/*--------Varibles-------*/
+.About {
+  font-family: "File Deletion", sans-serif;
+  color: rgb(10, 255, 84);
+  font-weight: 900;
+}
+.About h1 {
+  font-size: 60px;
+  font-style: italic;
+  padding-bottom: 30px;
+  border-top: 1px solid rgb(10, 255, 84);
+}
+.About div {
+  padding-top: 50px;
+}
+
+.Abouts1 h2, .Abouts2 h2 {
+  padding-top: 20px;
+  right: 20px;
+}
+.Abouts1 ul, .Abouts2 ul {
+  padding-top: 30px;
+}
+.Abouts1 p, .Abouts2 p {
+  padding-top: 15px;
+  font-size: 20px;
+  letter-spacing: 3px;
+}
+
+/*# sourceMappingURL=/confing.b3558518.css.map */

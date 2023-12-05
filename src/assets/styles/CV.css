@@ -1,0 +1,315 @@
+@import url("https://fonts.cdnfonts.com/css/file-deletion");
+@import url("https://fonts.cdnfonts.com/css/file-deletion");
+@font-face {
+  font-family: "yanseiji";
+  src: url("https://fonts.yanseiji.woff/css/file-deletion") format("woff");
+  font-style: normal;
+  font-weight: 400;
+  color: rgb(10, 255, 84);
+}
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+*:after *:before {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  background: #0f1632;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+img,
+video,
+canvas,
+svg {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+/*--------Varibles-------*/
+
+@font-face {
+  font-family: "yanseiji";
+  src: url("https://fonts.yanseiji.woff/css/file-deletion") format("woff");
+  font-style: normal;
+  font-weight: 400;
+  color: rgb(10, 255, 84);
+}
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+*:after *:before {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  background: #0f1632;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+img,
+video,
+canvas,
+svg {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+/*--------Varibles-------*/
+
+.coollink {
+  position: relative;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+.coollink:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: currentColor;
+  transform: scale3d(0, 1, 1);
+  transform-origin: right;
+  transition: transform 0.4s cubic-bezier(0.5, 0.5, 0.3, 0.1);
+}
+.coollink:after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  height: 100%;
+  transform: translate3d(150%, 0, 0); /* Corrigido aqui */
+  transition: transform 0.4s cubic-bezier(0.5, 0.5, 0.3, 0.1);
+}
+.coollink span {
+  transition: transform 0.4s cubic-bezier(0.5, 0.5, 0.3, 0.1);
+}
+.coollink:hover:before {
+  transform: scale3d(1, 1, 1);
+  transform-origin: left;
+}
+.coollink:hover:after {
+  transform: translate3d(0, 0, 0);
+}
+.coollink:hover span {
+  transform: translate3d(-150%, 0, 0);
+}
+
+.coolbutton {
+  position: relative;
+  border: none;
+  cursor: pointer;
+  width: 175px;
+  height: 120px;
+  background: none;
+  font-size: 18px;
+  font-weight: 700;
+}
+.coolbutton:before, .coolbutton:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.coolbutton:before {
+  content: "";
+  background: #24438f;
+  clip-path: path("M154.5,88.5 C131,113.5 62.5,110 30,89.5 C-2.5,69 -3.5,42 4.5,25.5 C12.5,9 33.5,-6 85,3.5 C136.5,13 178,63.5 154.5,88.5 Z");
+  transition: clip-path 0.5s cubic-bezier(0.455, 2.5, 0.645, 0.55);
+}
+.coolbutton:hover:before {
+  clip-path: path("M143,77 C117,96 74,100.5 45.5,91.5 C17,82.5 -10.5,57 5.5,31.5 C21.5,6 79,-5.5 130.5,4 C182,13.5 169,58 143,77 Z");
+}
+.coolbutton span {
+  mix-blend-mode: difference;
+  color: rgb(10, 255, 84);
+}
+.coolbutton:after {
+  content: "";
+  height: 85%;
+  width: 95%;
+  top: 6px;
+  border: 1px solid rgb(10, 255, 84);
+  border-radius: 58% 42% 55% 45%/56% 45% 55% 44%;
+  transform: rotate(-20deg);
+  transition: transform 0.5s cubic-bezier(0.455, 2.5, 0.645, 0.55);
+}
+.coolbutton:hover:after {
+  transform: translate3d(0, -5px, 0);
+}
+@media (max-width: 800px) {
+  .coolbutton {
+    transform: scale3d(0.7, 0.7, 0.7);
+    font-size: 23px;
+  }
+}
+
+.uil {
+  font-size: 35px;
+  text-shadow: -10px -20px #000000;
+}
+.uil:hover {
+  animation: coloredAnimation 0.005s infinite;
+}
+@keyframes coloredAnimation {
+  0% {
+    text-shadow: 5px 4px rgb(10, 255, 84), 5px 4px #000000;
+  }
+  25% {
+    text-shadow: -5px -6px rgb(10, 255, 84), -5px -6px #000000;
+  }
+  50% {
+    text-shadow: 5px -4px rgb(10, 255, 84), 5px -4px #000000;
+  }
+  75% {
+    text-shadow: -8px -4px rgb(10, 255, 84), -5px -4px #000000;
+  }
+  100% {
+    text-shadow: -5px 0px rgb(10, 255, 84), 5px -6px #000000;
+  }
+}
+
+.coolEye {
+  position: relative;
+  display: inline-block;
+  top: 100px;
+}
+.coolEye .textcircle {
+  display: block;
+  width: 250px;
+  animation: roatte 10s linear infinite;
+}
+.coolEye .textcircle text {
+  font-size: 32px;
+  text-transform: uppercase;
+  fill: rgb(10, 255, 84);
+}
+@keyframes roatte {
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+.eye {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.eye__outer, .eye__inner, .eye__lashes-up, .eye__lashes-down {
+  stroke: rgb(10, 255, 84);
+  fill: none;
+  stroke-width: 1.5px;
+}
+.eye__lashes-down {
+  opacity: 0;
+}
+
+.CV {
+  font-family: "File Deletion", sans-serif;
+  color: rgb(10, 255, 84);
+}
+.CV .CVh1 {
+  font-size: 60px;
+  font-style: italic;
+  padding-bottom: 30px;
+  border-top: 1px solid rgb(10, 255, 84);
+}
+
+.resume {
+  text-align: center;
+  font-weight: 800;
+}
+.resume__header h1 {
+  font-size: 40px;
+}
+.resume__header p {
+  font-size: 20px;
+  font-weight: 700;
+}
+.resume div {
+  padding-top: 50px;
+}
+.resume li {
+  padding-top: 20px;
+  letter-spacing: 1.5px;
+}
+.resume p {
+  padding-top: 50px;
+}
+
+/*# sourceMappingURL=CV.css.map */

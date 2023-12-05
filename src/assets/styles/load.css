@@ -1,0 +1,181 @@
+@import url("https://fonts.cdnfonts.com/css/file-deletion");
+@font-face {
+  font-family: "yanseiji";
+  src: url("https://fonts.yanseiji.woff/css/file-deletion") format("woff");
+  font-style: normal;
+  font-weight: 400;
+  color: rgb(10, 255, 84);
+}
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+*:after *:before {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  background: #0f1632;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+img,
+video,
+canvas,
+svg {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+/*--------Varibles-------*/
+
+.loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: 99;
+  background: #0f1632;
+  display: grid;
+  place-items: center;
+  font-family: "Orbitron", sans-serif;
+  display: none;
+  /*&__svg{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 95%;
+      opacity: 0;
+  }*/
+}
+.loading__box {
+  position: relative;
+  width: 500px;
+  height: 200px;
+  border: 3px solid rgb(10, 255, 84);
+  border-top: 3px solid rgba(108, 255, 140, 0.4784313725);
+  border-bottom: 3px solid rgba(108, 255, 140, 0.4784313725);
+}
+@media (max-width: 355px) {
+  .loading__box {
+    font-size: 17px;
+  }
+}
+.loading__bar {
+  width: 90%;
+  height: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #ffffff;
+  border-radius: 2px;
+}
+.loading__bar--inner {
+  height: 100%;
+  width: 0%;
+  border-radius: 2px;
+  background: rgb(10, 255, 84);
+}
+.loading__text {
+  position: relative;
+  color: #ffffff;
+  padding: 1rem;
+  font-size: 20px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.loading__text--dot {
+  width: 15px;
+  height: 15px;
+  margin: 0 3px;
+  border-radius: 50%;
+  background: rgb(10, 255, 84);
+  animation: pulse 1s infinite;
+}
+@keyframes pulse {
+  from {
+    opacity: 0;
+    background: #ffffff;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.loading__text--border {
+  width: 85%;
+  height: 1px;
+  background: rgb(10, 255, 84);
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.loading__counter {
+  position: absolute;
+  top: 70%;
+  left: 0;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 700;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+.loading__counter--number {
+  color: rgb(10, 255, 84);
+}
+.loading__width_animation {
+  animation: width_animation 1s forwards;
+}
+@keyframes __width_animation {
+  0% {
+    width: 85%;
+  }
+  100% {
+    width: 280px;
+  }
+}
+
+/*# sourceMappingURL=load.css.map */

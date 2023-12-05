@@ -1,0 +1,42 @@
+@import '../styles/base.scss';
+@import '../styles/coolinks.scss';
+
+.CV{
+    font-family: 'File Deletion', sans-serif;
+    color: $green-color;
+    .CVh1{
+        font-size: 60px;
+        font-style: italic;
+        padding-bottom: 30px;
+        border-top: 1px solid $green-color;
+    }
+
+
+}
+
+.resume{
+    text-align: center;
+    font-weight: 800;
+    &__header{
+        h1{
+            font-size: 40px;
+
+        }
+        p{
+            font-size: 20px;
+            font-weight: 700;
+        }
+
+    }
+    div{
+        padding-top: 50px;
+    }
+    li{
+        padding-top: 20px;
+        letter-spacing: 1.5px;
+    }
+    p{
+        padding-top: 50px;
+    }
+
+}

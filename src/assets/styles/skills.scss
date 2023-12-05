@@ -1,0 +1,64 @@
+@import "./base.scss";
+
+.skills{
+    position: relative;
+    font-size: 25px;
+    height: 150px;
+    background: $blue-ground;
+    overflow: hidden;
+    text-align: center;
+    padding-top: 1rem;
+    color: $second-green;
+    &__header{
+        font-weight: 600;
+        
+    }
+    .skills__text {
+        position: absolute;
+        white-space: nowrap;
+        font-weight: 400;
+        font-size: 22px;
+    
+            &--left {
+                position: absolute;
+                white-space: nowrap;
+                left: 0;
+                top: 50px;
+                animation: moveleft 300s linear infinite;
+                color: $second-green;
+                @keyframes moveleft {
+                    0%{
+                        transform: translate3d(0,0,0);
+                    }
+                    100%{
+                        transform: translate3d(-50%,0,0);
+                    }
+                }
+            }
+        
+            &--rigth {
+                right: 0;
+                top: 95px;
+                position: absolute;
+                white-space: nowrap;
+                color: $second-green;
+                animation: moverigth 300s linear infinite;
+                @keyframes moverigth {
+                    0%{
+                        transform: translate3d(0,0,0);
+                    }
+                    100%{
+                        transform: translate3d(50%,0,0);
+                    }
+                }
+            }
+        }
+        @media (max-width: 700px){
+            &{
+                height: 200px;
+            }
+            &__text {
+                font-size: 20px;
+            }
+        }
+    }

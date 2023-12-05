@@ -1,0 +1,32 @@
+@import '../styles/base.scss';
+
+.About{
+    font-family: 'File Deletion', sans-serif;
+    color: $green-color;
+    font-weight: 900;
+    h1{
+        font-size: 60px;
+        font-style: italic;
+        padding-bottom: 30px;
+        border-top: 1px solid $green-color;
+    }
+    div{
+        padding-top: 50px;
+        
+    }
+}
+
+.Abouts1, .Abouts2{
+    h2{
+        padding-top: 20px;
+        right: 20px;
+    }
+    ul{
+        padding-top: 30px;
+    }
+    p{
+        padding-top: 15px;
+        font-size: 20px;
+        letter-spacing: 3px;
+    }
+}

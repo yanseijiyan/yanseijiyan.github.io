@@ -1,0 +1,214 @@
+@import url("https://fonts.cdnfonts.com/css/file-deletion");
+@import url("https://fonts.cdnfonts.com/css/bartkey");
+@font-face {
+  font-family: "yanseiji";
+  src: url("https://fonts.yanseiji.woff/css/file-deletion") format("woff");
+  font-style: normal;
+  font-weight: 400;
+  color: rgb(10, 255, 84);
+}
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+*:after *:before {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  background: #0f1632;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+img,
+video,
+canvas,
+svg {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+/*--------Varibles-------*/
+
+.landing {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: #0f1632;
+  color: rgb(10, 255, 84);
+  overflow: hidden;
+  background-image: url("/image/54.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.landing .header {
+  position: absolute;
+  top: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+.landing .header__wrap {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 60vw;
+}
+.landing .header__left {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.landing .header__left li {
+  font-size: 18px;
+  font-weight: 700;
+}
+@media (max-width: 1200px) {
+  .landing .header__wrap {
+    width: 100vw;
+  }
+}
+@media (max-width: 650px) {
+  .landing .header__sm {
+    display: none;
+  }
+}
+.landing .socials {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 10rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  z-index: 2;
+}
+.landing .scrolldown {
+  position: absolute;
+  bottom: 3rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 23px;
+  height: 70px;
+}
+.landing .scrolldown__wheel {
+  height: 42px;
+  width: 24px;
+  border-radius: 10px;
+  border: 2px solid rgb(10, 255, 84);
+}
+.landing .scrolldown__wheel--inner {
+  position: absolute;
+  left: 10px;
+  margin-top: 5px;
+  width: 4px;
+  height: 4px;
+  background: rgb(10, 255, 84);
+  border-radius: 50%;
+  animation: movingmouse 0.5s linear infinite;
+}
+@keyframes movingmouse {
+  0% {
+    top: 1px;
+  }
+  25% {
+    top: 2px;
+  }
+  50% {
+    top: 3px;
+  }
+  75% {
+    top: 2px;
+  }
+  100% {
+    top: 1px;
+  }
+}
+.landing .scrolldown .scrolldown__arrows {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.landing .scrolldown .scrolldown__arrows .scrolldown__arrow {
+  width: 15px;
+  height: 15px;
+  border-right: 2px solid rgb(10, 255, 84);
+  border-bottom: 2px solid rgb(10, 255, 84);
+  transform: rotate(45deg);
+  animation: movingarrow 0.8s infinite;
+  animation-direction: alternate;
+}
+.landing .scrolldown .scrolldown__arrows .scrolldown__arrow:nth-child(2) {
+  animation-delay: 0.1s;
+}
+.landing .scrolldown .scrolldown__arrows .scrolldown__arrow:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.landing .scrolldown .scrolldown__arrows .scrolldown__arrow:nth-child(3) {
+  animation-delay: 0.3s;
+}
+@keyframes movingarrow {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.landing .intro {
+  position: absolute;
+  top: 35%;
+  left: 1rem;
+  width: 100%;
+  height: 60%;
+  z-index: 2;
+  color: rgb(10, 255, 84);
+  font-family: "File Deletion", sans-serif;
+}
+.landing .intro h4 {
+  font-size: 15px;
+}
+.landing .intro h1 {
+  font-size: 18px;
+  width: 93%;
+  padding: 1rem;
+}
+
+/*# sourceMappingURL=landing.css.map */
